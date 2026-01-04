@@ -1,5 +1,7 @@
 package NivelIntermediario;
 
+import java.util.LinkedList;
+
 public class Main {
     public static void main(String[] args) {
         Sayajin goku = new Sayajin();
@@ -26,6 +28,12 @@ public class Main {
         goku.ativarZenkai();
         kuririn.fazerCoisasDeHumano();
         piccolo.regenerar();
+
+        LinkedList<Sayajin> sayajins = new LinkedList<>();
+
+        sayajins.add(goku);
+
+        System.out.println(sayajins);
 
 
 

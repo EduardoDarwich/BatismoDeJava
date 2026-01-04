@@ -28,7 +28,7 @@ public class Desafio3 {
                 System.out.println("A habilidade especial do seu ninja é " + habilidadeEspecial);
             }
 
-            @Override
+
             public void mostrarInformacoes(){
                 System.out.println("O nome do ninja é " + nome);
                 System.out.println("A idade do ninja é " + idade);
@@ -41,14 +41,12 @@ public class Desafio3 {
 
         }
 
+        //Criando variáveis controle do menu
         List<Ninja> ninjas = new ArrayList<>();
-
         Scanner sc = new Scanner(System.in);
         int op = 0;
         String entrada = "";
         int uc = 0;
-        int at = 0;
-
 
         while (op != 4){
 
@@ -147,12 +145,19 @@ public class Desafio3 {
                     }
                     for (int i = 0; i < ninjas.toArray().length; i++) {
 
+                        if (!(ninjas.get(i) instanceof Uchiha)){
+                            continue;
+                        }
+
                         System.out.println((i + 1) + ". " + ninjas.get(i).nome);
+
 
                     }
 
+
                     System.out.print("escolha o numero de um ninja para alterar a habilidade: ");
                     Uchiha ninjaAt = (Uchiha) ninjas.get(sc.nextInt() - 1);
+
                     entrada = sc.nextLine();
 
                     System.out.print("Agora digite a nova habilidade desse ninja: ");
