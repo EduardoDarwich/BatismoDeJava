@@ -1,5 +1,10 @@
 package NivelIntermediario;
 
+import NivelIntermediario.heranca.Humano;
+import NivelIntermediario.interfaces.Gohan;
+import NivelIntermediario.heranca.Namekuseijin;
+import NivelIntermediario.heranca.Sayajin;
+
 import java.util.LinkedList;
 
 public class Main {
@@ -34,6 +39,15 @@ public class Main {
         sayajins.add(goku);
 
         System.out.println(sayajins);
+
+        Gohan gohan = new Gohan();
+        gohan.ativarZenkai();
+        gohan.AtivarModoBestial();
+
+        piccolo.habilidadeEspecial();
+        gohan.habilidadeEspecial();
+
+
 
 
 

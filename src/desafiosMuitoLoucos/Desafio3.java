@@ -13,28 +13,29 @@ public class Desafio3 {
             String nivelDificuldade;
             String statusMissao;
 
-            public void mostrarInformacoes(){
+            public void mostrarInformacoes() {
                 System.out.println("O nome do ninja é " + nome);
                 System.out.println("A idade do ninja é " + idade);
                 System.out.println("A missão desse ninja é " + missao);
                 System.out.println("O nível de dificuldade dessa missão é " + nivelDificuldade);
-                System.out.println("A missão atual está " + statusMissao );
+                System.out.println("A missão atual está " + statusMissao);
             }
         }
 
         class Uchiha extends Ninja {
             String habilidadeEspecial;
-            public void mostrarHabilidadeEspecial(){
+
+            public void mostrarHabilidadeEspecial() {
                 System.out.println("A habilidade especial do seu ninja é " + habilidadeEspecial);
             }
 
 
-            public void mostrarInformacoes(){
+            public void mostrarInformacoes() {
                 System.out.println("O nome do ninja é " + nome);
                 System.out.println("A idade do ninja é " + idade);
                 System.out.println("A missão desse ninja é " + missao);
                 System.out.println("O nível de dificuldade dessa missão é " + nivelDificuldade);
-                System.out.println("A missão atual está " + statusMissao );
+                System.out.println("A missão atual está " + statusMissao);
                 System.out.println("A habilidade especial do seu ninja é " + habilidadeEspecial);
 
             }
@@ -48,7 +49,7 @@ public class Desafio3 {
         String entrada = "";
         int uc = 0;
 
-        while (op != 4){
+        while (op != 4) {
 
             System.out.println("\n===== Menu Ninja =====");
             System.out.println("1. Mostrar informações de todos os ninjas");
@@ -61,12 +62,12 @@ public class Desafio3 {
             entrada = sc.nextLine();
 
 
-            switch (op){
+            switch (op) {
                 case 1:
-                    if(ninjas.isEmpty()){
+                    if (ninjas.isEmpty()) {
                         System.out.println("Nenhum ninja foi cadastrado ainda");
                     }
-                    for (Ninja ninja: ninjas){
+                    for (Ninja ninja : ninjas) {
 
                         ninja.mostrarInformacoes();
 
@@ -84,7 +85,7 @@ public class Desafio3 {
                     uc = sc.nextInt();
                     entrada = sc.nextLine();
 
-                    if (uc == 1 ){
+                    if (uc == 1) {
                         Uchiha uchiha = new Uchiha();
 
                         System.out.print("Digite o nome do seu ninja aqui: ");
@@ -135,17 +136,16 @@ public class Desafio3 {
                     System.out.println("\nO ninja foi cadastrado com sucesso");
 
 
-
                     break;
 
                 case 3:
-                    if (ninjas.isEmpty()){
+                    if (ninjas.isEmpty()) {
                         System.out.println("Não tem ninjas no sistema");
                         break;
                     }
                     for (int i = 0; i < ninjas.toArray().length; i++) {
 
-                        if (!(ninjas.get(i) instanceof Uchiha)){
+                        if (!(ninjas.get(i) instanceof Uchiha)) {
                             continue;
                         }
 
@@ -171,11 +171,7 @@ public class Desafio3 {
                     break;
 
 
-
             }
-
-
-
 
 
         }
