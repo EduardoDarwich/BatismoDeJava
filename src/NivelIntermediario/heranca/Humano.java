@@ -1,4 +1,4 @@
-package NivelIntermediario;
+package NivelIntermediario.heranca;
 
 public class Humano extends Guerreiro{
 
