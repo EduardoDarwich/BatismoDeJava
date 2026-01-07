@@ -1,5 +1,6 @@
 package NivelIntermediario;
 
+import NivelIntermediario.construtores.Hokages;
 import NivelIntermediario.heranca.Humano;
 import NivelIntermediario.interfaces.Gohan;
 import NivelIntermediario.heranca.Namekuseijin;
@@ -29,23 +30,24 @@ public class Main {
         piccolo.vivo = true;
         piccolo.idade = 20;
 
-
+        //Exemplo de herança
         goku.ativarZenkai();
         kuririn.fazerCoisasDeHumano();
         piccolo.regenerar();
 
-        LinkedList<Sayajin> sayajins = new LinkedList<>();
 
-        sayajins.add(goku);
-
-        System.out.println(sayajins);
-
+        //Exemplo de interface
         Gohan gohan = new Gohan();
         gohan.ativarZenkai();
         gohan.AtivarModoBestial();
 
+        //Exemplo de polimorfismo
         piccolo.habilidadeEspecial();
         gohan.habilidadeEspecial();
+
+        Hokages hokages = new Hokages();
+        Hokages hokages2 = new Hokages("Mikael");
+        System.out.println(hokages2.nome);
 
 
 
