@@ -12,4 +12,5 @@ public class Freeza extends Guerreiro{
         System.out.println("Contemplem a verdadeira força do grande freeza");
     }
 
+
 }

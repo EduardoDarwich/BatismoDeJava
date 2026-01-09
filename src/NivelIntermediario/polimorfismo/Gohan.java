@@ -1,4 +1,4 @@
-package NivelIntermediario.interfaces;
+package NivelIntermediario.polimorfismo;
 
 import NivelIntermediario.heranca.Sayajin;
 

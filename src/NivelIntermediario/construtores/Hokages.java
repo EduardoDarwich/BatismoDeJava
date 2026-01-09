@@ -8,27 +8,14 @@ public class Hokages {
     public int missoes;
     public int altura;
 
-
-    //Construtor sem argumentos
-    public Hokages(){
+    public Hokages() {
     }
 
-    //Construtor com argumentos
-    public Hokages(String nome){
+    public Hokages(String nome, int idade, boolean vivo, int missoes, int altura) {
         this.nome = nome;
-
-    }
-
-    public Hokages(int idade){
         this.idade = idade;
-    }
-
-    //Construtor com todos os argumentos
-    public Hokages(int altura, int missoes, boolean vivo, int idade, String nome) {
-        this.altura = altura;
-        this.missoes = missoes;
         this.vivo = vivo;
-        this.idade = idade;
-        this.nome = nome;
+        this.missoes = missoes;
+        this.altura = altura;
     }
 }
