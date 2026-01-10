@@ -20,4 +20,9 @@ public class ContaCorrente extends ContaBancaria{
         System.out.println("Você depositou " + valor + " reais");
 
     }
+
+    @Override
+    public String toString() {
+        return "Essse é o objeto da connta corrente";
+    }
 }
