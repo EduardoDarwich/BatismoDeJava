@@ -6,5 +6,8 @@ public class Main {
 
     goku.ataques = Ataques.KAMEHAMEHA;
     System.out.println(goku.ataques);
+
+
+
     }
 }
