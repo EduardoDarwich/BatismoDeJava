@@ -3,11 +3,11 @@ package NivelIntermediario.generics;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Mochila {
+public class Mochila <T>{
 
-    private List<Equipamento> equipamentos = new ArrayList<>();
+    private List<T> equipamentos = new ArrayList<>();
 
-    public List<Equipamento> getEquipamentos() {
+    public List<T> getEquipamentos() {
         return equipamentos;
     }
 
@@ -15,11 +15,15 @@ public class Mochila {
         this.equipamentos = equipamentos;
     }
 
-    public Mochila(List<Equipamento> equipamentos) {
+    public Mochila(List<T> equipamentos) {
         this.equipamentos = equipamentos;
     }
 
-    public void adicionarFerramenta(Equipamento equipamento){
+    public Mochila() {
+    }
+
+    //Adicionar ferramentas
+    public void adicionarFerramenta(T equipamento){
 
         equipamentos.add(equipamento);
 

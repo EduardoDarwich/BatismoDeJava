@@ -19,6 +19,6 @@ public class Equipamento {
 
     @Override
     public String toString() {
-        return "Essa é a ferramenta " + nome;
+        return nome;
     }
 }
