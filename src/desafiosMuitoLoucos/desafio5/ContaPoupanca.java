@@ -1,23 +1,40 @@
 package desafiosMuitoLoucos.desafio5;
 
-public class ContaPoupanca extends ContaBancaria{
+public class ContaPoupanca extends ContaBanco{
+    TipoConta tipoConta;
 
-    public ContaPoupanca(double saldo) {
+    @Override
+    public void depositar(int valor) {
+        setSaldo(getSaldo() + valor);
+        System.out.println("Você depositou " + valor + " R$");
+
+    }
+
+    @Override
+    public void verSaldo() {
+        System.out.println("Seu saldo da sua conta " + tipoConta + " é " + getSaldo());
+
+    }
+
+
+
+    public ContaPoupanca(int saldo) {
         super(saldo);
     }
 
-    @Override
-    public void consultarSaldo() {
+    public ContaPoupanca() {
+    }
 
-        System.out.println("Seu saldo da sua conta poupanca é " + saldo);
-
+    public ContaPoupanca(int saldo, TipoConta tipoConta){
+        super(saldo);
+        this.tipoConta = tipoConta;
     }
 
     @Override
-    public void depositar(double valor) {
-        saldo = saldo  + (valor - valor * 0.01);
-
-        System.out.println("Voce depositou " + valor + " reais na sua conta poupanca");
+    public void mostrarInformacoes(){
+        System.out.println("Sua conta " + tipoConta + " tem " + getSaldo() + "R$" + " de saldo");
 
     }
+
+
 }

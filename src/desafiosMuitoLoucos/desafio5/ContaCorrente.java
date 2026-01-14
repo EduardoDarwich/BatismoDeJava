@@ -1,28 +1,35 @@
 package desafiosMuitoLoucos.desafio5;
 
-public class ContaCorrente extends ContaBancaria{
+public class ContaCorrente extends ContaBanco{
     TipoConta tipoConta;
-    public ContaCorrente(double saldo) {
+
+    @Override
+    public void depositar(int valor) {
+        setSaldo(getSaldo() + valor);
+        System.out.println("Você depositou " + valor + " R$");
+
+    }
+
+    @Override
+    public void verSaldo() {
+        System.out.println("Seu saldo da sua conta " + tipoConta + " é " + getSaldo());
+    }
+
+    public ContaCorrente() {
+    }
+
+    public ContaCorrente(int saldo) {
         super(saldo);
     }
 
-    @Override
-    public void consultarSaldo() {
-
-        System.out.println("Seu saldo da sua conta corrente é " + saldo );
-
+    public ContaCorrente(int saldo, TipoConta tipoConta) {
+        super(saldo);
+        this.tipoConta = tipoConta;
     }
 
     @Override
-    public void depositar(double valor) {
-        saldo = saldo  + (valor - valor * 0.01);
+    public void mostrarInformacoes(){
+        System.out.println("Sua conta " + tipoConta + " tem " + getSaldo() + "R$" + " de saldo");
 
-        System.out.println("Você depositou " + valor + " reais");
-
-    }
-
-    @Override
-    public String toString() {
-        return "Essse é o objeto da connta corrente";
     }
 }
