@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Menu {
 
-
+    //Variaveis de controle do menu
     String nome;
     int controle ;
     int ninjaUnico;

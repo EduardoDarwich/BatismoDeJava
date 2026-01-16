@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //Variáveis de controle do menu
+        //Objetos de controle do menu
         Scanner sc = new Scanner(System.in);
         Menu menu = new Menu();
         OperacoesPrincipais operacoesPrincipais = new OperacoesPrincipais();
