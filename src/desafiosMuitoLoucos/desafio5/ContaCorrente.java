@@ -32,4 +32,9 @@ public class ContaCorrente extends ContaBanco{
         System.out.println("Sua conta " + tipoConta + " tem " + getSaldo() + "R$" + " de saldo");
 
     }
+
+    @Override
+    public String toString() {
+        return "Sua conta " + tipoConta + " tem " + getSaldo() + " de saldo";
+    }
 }

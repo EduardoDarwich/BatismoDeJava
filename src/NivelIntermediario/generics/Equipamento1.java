@@ -1,10 +1,10 @@
 package NivelIntermediario.generics;
 
-public class Equipamento {
+public class Equipamento1 {
 
     private String nome;
 
-    public Equipamento(String nome){
+    public Equipamento1(String nome){
         this.nome = nome;
     }
 

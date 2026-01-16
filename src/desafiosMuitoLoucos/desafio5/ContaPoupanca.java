@@ -36,5 +36,10 @@ public class ContaPoupanca extends ContaBanco{
 
     }
 
+    @Override
+    public String toString() {
+        return "Sua conta " + tipoConta + " tem " + getSaldo() + " de saldo";
+    }
+
 
 }
