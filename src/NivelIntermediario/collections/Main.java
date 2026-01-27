@@ -16,7 +16,7 @@ public class Main {
         * Todas classes que herdam ou implementam ela ja tem esse metodo por padrão
         * */
 
-        //LinkedList exemplo BBASICO
+        //LinkedList exemplo BASICO
         LinkedList<String> list = new LinkedList<>();
 
         list.add("Naruto");

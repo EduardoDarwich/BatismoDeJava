@@ -16,6 +16,8 @@ public class OperacoesPrincipais {
     }
 
     public void listarNinjas(LinkedList<Ninja> ninjas, Menu menu){
+
+        menu.controle = 0;
         for(Ninja ninja: ninjas){
 
             System.out.println(menu.controle + ". " + ninja.getNome() );

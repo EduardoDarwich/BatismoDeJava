@@ -3,7 +3,11 @@ package NivelIntermediario.treeSet;
 import java.util.*;
 
 public class Main {
+
+
     public static void main(String[] args){
+
+
 
 
         /*
@@ -26,7 +30,7 @@ public class Main {
         System.out.println(ninjaSet);
 
 
-        //Transformando uma lista em um HashSet  usando collections
+        //Transformando uma lista em um HashSet usando collections
         List<String> ninja = new ArrayList<>();
         ninja.add("Naruto");
         ninja.add("Naruto");

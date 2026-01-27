@@ -34,7 +34,7 @@ public class Main {
         ninjas.sort(Comparator.comparing(Ninja::getNome));
 
         //Loop principal
-        while (menu.op != 8){
+        while (menu.op != 7){
 
             menu.menuPrincipal();
 
